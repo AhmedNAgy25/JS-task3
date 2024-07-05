@@ -52,7 +52,6 @@ function counterincreament(){
         hcounter+=counter/59;
         counter=counter-60;
     }
-    // stopWatchDisplay.innerHTML= hcounter +" : "+counter;
 }
 function stopFn(){
     goOn=false;
@@ -69,9 +68,5 @@ function resetFn(){
 function nowTimer() {
     stopWatchDisplay.innerHTML = `${hcounter.toString().padStart(2, '0')} : ${counter.toString().padStart(2, '0')}`;
   }
-
-
-
-// stopWatchDisplay.innerHTML=counter;
 
 
