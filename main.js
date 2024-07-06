@@ -41,32 +41,29 @@ function startFn(){
         goOn=true;
         isValid=setInterval(counterincreament,1000);
     }
-    return false;
 }
 function counterincreament(){
     if(goOn){
         counter++;
+        if(counter>=60){
+            hcounter+=counter/60;
+            counter=counter-60;
+        }
         nowTimer();
     }  
-    if(counter>=59){
-        hcounter+=counter/59;
-        counter=counter-60;
-    }
 }
 function stopFn(){
     goOn=false;
     clearInterval(isValid);
-    return false;
 }
 function resetFn(){
     stopFn();
     counter = 0;
     hcounter =0;
     nowTimer();
-    return false;
 }
 function nowTimer() {
     stopWatchDisplay.innerHTML = `${hcounter.toString().padStart(2, '0')} : ${counter.toString().padStart(2, '0')}`;
-  }
+}
 
 
