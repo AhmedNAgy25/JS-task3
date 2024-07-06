@@ -5,9 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="master.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <title>Task3</title>
 </head>
 <body>
+    <h1>task 3 JS</h1>
+
     <section id="clock-container">
         <div id="clock-prog"></div>
     </section>
@@ -16,22 +21,26 @@
 
     <section id="stopWatch-container">
         <div id="stopWatch-prog"></div>
-        <button id="start" onclick="return startFn()">start</button>
-        <button id="stop" onclick="return stopFn()">stop</button>
-        <button id="reset" onclick="return resetFn()">reset</button>
+        <div class="btn-cont">
+            <button id="start" onclick="return startFn()">start</button>
+            <button id="stop" onclick="return stopFn()">stop</button>
+            <button id="reset" onclick="return resetFn()">reset</button>
+        </div>
     </section>
 
     <br>
 
     <section id="calculator-container">
+
         <div id="screen"></div>
-        <input type="number" id="firstnum"><br>
-        <button onclick="return operation('+')">+</button>
-        <button onclick="return operation('-')">-</button>
-        <button onclick="return operation('*')">*</button>
-        <button onclick="return operation('/')">/</button><br>
-        <input type="number" id="secondnum"><br>
-        <!-- <button onclick="return result()">=</button> -->
+        <input type="number" id="firstnum">
+        <div class="btn-cont">
+            <button onclick="return operation('+')">+</button>
+            <button onclick="return operation('-')">-</button>
+            <button onclick="return operation('*')">*</button>
+            <button onclick="return operation('/')">/</button>
+        </div>
+        <input type="number" id="secondnum">
 
     </section>
 
