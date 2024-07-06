@@ -67,3 +67,29 @@ function nowTimer() {
 }
 
 
+// calculator function
+var res;
+function operation(op){
+    var firstnum = parseFloat(document.getElementById("firstnum").value);
+    var secondnum = parseFloat(document.getElementById("secondnum").value);
+    switch(op){
+        case '+':
+             res= firstnum+secondnum;
+         break;
+        
+        case '-':
+            res= firstnum - secondnum;
+            break;
+
+        case '*':
+            res= firstnum * secondnum;
+            break;
+
+        case '/':
+            res= firstnum / secondnum;
+            break;
+        default:
+            console.log("error");
+    }
+    document.getElementById("screen").innerHTML = res;
+}

@@ -21,8 +21,18 @@
         <button id="reset" onclick="return resetFn()">reset</button>
     </section>
 
+    <br>
+
     <section id="calculator-container">
-        <div id="calculator-prog"></div>
+        <div id="screen"></div>
+        <input type="number" id="firstnum"><br>
+        <button onclick="return operation('+')">+</button>
+        <button onclick="return operation('-')">-</button>
+        <button onclick="return operation('*')">*</button>
+        <button onclick="return operation('/')">/</button><br>
+        <input type="number" id="secondnum"><br>
+        <!-- <button onclick="return result()">=</button> -->
+
     </section>
 
     <script src="main.js"></script>
